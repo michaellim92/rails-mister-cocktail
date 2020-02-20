@@ -1,0 +1,5 @@
+<%= simple_form_for ([@cocktail, @dose]) do |t| %>
+  <%= t.input :description %>
+  <%= t.input :ingredient_id, collection: Ingredient.all, input_html: { multiple: false } %>
+  <%= t.submit %>
+<% end %>

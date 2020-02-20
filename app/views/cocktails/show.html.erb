@@ -1,0 +1,12 @@
+<h2><%= @cocktail.name %></h2>
+
+<% @cocktail.doses.each do |dose| %>
+  <div class="d-flex">
+    <p><%= dose.ingredient.name %></p>
+    <%= link_to icon("fas", "trash"), dose_path(dose), method: :delete %>
+  </div>
+<% end %>
+<br />
+<%= link_to "Add ingredients", new_cocktail_dose_path(@cocktail) %>
+<br />
+<%= link_to "Go Home", cocktails_path %>

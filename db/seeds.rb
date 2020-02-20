@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+fruits = ["apple", "peach", "sloeberry", "pineapple", "kiwi", "lemon", "lime", "kiwano", "cucumber", "strawberry"]
+
+fruits.each do |fruit| 
+  ingredient = Ingredient.new(name: fruit)
+  ingredient.save!
+end

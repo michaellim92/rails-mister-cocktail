@@ -1,0 +1,21 @@
+.banner {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(114, 205, 228, 0.3)),asset_url("diz-play-PIrOQrqewLE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  width: 100vw;
+  height: 50px;
+  padding: 16px;
+
+  a {
+    text-decoration: none;
+  }
+}
